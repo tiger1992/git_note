@@ -1,0 +1,17 @@
+
+--- git远程学习：目前只试过https协议成功 ---
+
+1、注册git账号：【tiger1992：Yy7928288】；码云：【tigerhost：YY7928288】
+
+2、在用户主目录下创建SSH Key：【ssh-keygen -t rsa -C "1165069099@qq.com"】
+
+3、将本地仓库关联远程仓库：git remote add origin <url>          
+
+4、第一次推送master分支的所有内容：git push -u origin master
+
+5、将最新修改推送至远程：git push origin master
+
+6、克隆远程到本地：git clone <url>
+
+7、Git 支持多种数据传输协议 -- 【https:// 协议】、【git:// 协议】、【SSH 传输协议：user@server:path/to/repo.git】
+
