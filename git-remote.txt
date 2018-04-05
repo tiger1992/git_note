@@ -1,17 +1,43 @@
 
---- gitԶ��ѧϰ��Ŀǰֻ�Թ�httpsЭ��ɹ� ---
+--- git远程学习：目前只试过https协议成功 ---
 
-1��ע��git�˺ţ���tiger1992��Yy7928288�������ƣ���tigerhost��YY7928288��
+1、注册git账号：【tiger1992：Yy7928288】；码云：【tigerhost：YY7928288】
 
-2�����û���Ŀ¼�´���SSH Key����ssh-keygen -t rsa -C "1165069099@qq.com"��
+2、在用户主目录下创建SSH Key：【ssh-keygen -t rsa -C "1165069099@qq.com"】
 
-3�������زֿ����Զ�ֿ̲⣺git remote add origin <url>          
+3、关联：git remote add origin <url>          
 
-4����һ������master��֧���������ݣ�git push -u origin master
+4、第一次推送master分支：git push -u origin master
 
-5���������޸�������Զ�̣�git push origin master
+5、推送：git push origin master
 
-6����¡Զ�̵����أ�git clone <url>
+6、克隆：git clone <url>
 
-7��Git ֧�ֶ������ݴ���Э�� -- ��https:// Э�顿����git:// Э�顿����SSH ����Э�飺user@server:path/to/repo.git��
+7、git版本控制器中新建远程仓库连接或者删除旧的远程仓库的连接建立新的远程连接
+
+方法一:(从零开始新建本地仓库,将远程文件clone下来)
+Create a new repository     	#本地新建仓库，此条非git命令
+git clone <url>  				#将远程git仓库文件clone至本地新建仓库
+cd front                       	#切换至新建的分支
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+方法二:#已经存在文件夹(此目录之前未建立过远程git仓库连接)
+cd existing_folder     			#切到已存在的目录下
+git init                      	#初始化git
+git remote add origin <url>     #建立远成仓库连接
+git add .                  		#添加文件
+git commit              		#提交
+git push -u origin master    	#push到远程仓库
+
+方法三:#已经存在的git仓库分支
+cd existing_repository_folder  	#切到已存在的git分支的目录下
+rm -rf .git                   	#删除该分支之前的git配置
+git init                     	#初始化git
+git remote add <url>     		#建立新的远成仓库连接
+git add filename              	#添加文件
+git commit -m "备忘录"         	#提交
+git push -u origin master    	#第一次push到远程仓库
 
