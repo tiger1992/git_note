@@ -23,4 +23,4 @@
 
 11、git log --graph --pretty=oneline --abbrev-commit
 
-12、将本地分支推送至远程非主分支：git push origin 2018local:pro_20180713_remote
+12、将本地分支推送至远程非主分支：git push origin 2018_local:pro_2018_remote
